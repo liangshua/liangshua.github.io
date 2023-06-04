@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简介</title>
+     <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <!--页面顶部-->
+    <header>
+        <img id="header_top"
+           src="index_images/header.jpg" alt="网页首部颜色">
+        <p id="header_content">欢迎来到我的个人主页！</p>
+        <img id="header_bottom"
+           src="index_images/header.jpg" alt="网页首部颜色">
+    </header> 
+
+    <!--导航栏-->
+    <nav>
+        <ul>
+            <li ><a href="index.html">首页</a></li>
+            <li><a href="life.html">生活</a></li>
+            <li><a href="hobby.html">爱好</a></li>
+            <li><a href="activity.html">学期总结</a></li>
+        </ul>
+    </nav>
+
+    <!--主内容区——个人简历表-->
+    <!--该表由一个外层表，两个中间层表以及在第一个中间层表嵌套了三个内层表-->
+    <!--最外层表中的基本列数为2，因此在外层的td中要加上 colspan=2，将两个单元格合并-->
+    <table id="main_table">
+        <tr class="top" height="60px">
+            <td id="caption" colspan="2">个人简介</td>    <!--表中大标题-->
+        </tr>
+        <tr>
+            <td class="title" colspan="2">基本信息</td>   <!--基本信息-->
+        </tr>
+        <tr class="main_body">
+            <td >
+                <p>姓名：梁双</p>
+                <p>民族：汉族</p>
+                <p>籍贯：河南省南阳市卧龙区</p>
+                <p>出生日期：2004年11月11日</p>
+            </td>
+            <td>
+                <p>身高：163cm</p>
+                <p>体重：50kg</p>
+                <p>职业：在读本科生（中南财经政法大学）</p>
+                <p>政治面貌：共青团员</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="title" colspan="2">教育经历</td>   <!--教育经历-->
+        </tr>
+        <tr class="main_body">                           
+            <td colspan="2">
+                <p>2009年9月到2015年6月为小学阶段，就读于河南省南阳市姚亮中心小学</p>
+                <p>2015年9月到2018年六月为初中阶段，就读于河南省南阳市二十八中</p>  
+                <p>2018年9月到2021年六月为高中阶段，就读于河南省南阳市一中</p>
+                <p>2021年9月至今一直处于大学阶段，就读于湖北省武汉市中南财经政法大学</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="title" colspan="2">学业成就</td>  <!--学业成就-->
+        </tr>
+        <tr class="academic_performance">
+            <td colspan="2">
+                <table class="performance">             <!--在td中嵌套中间层表，表中包含大学成绩和学业证书两个内容-->
+                    <tr height="20px">
+                        <td class="secondarytitle">大学成绩</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="score_body">  <!--在td中嵌套最内层表，表中包含三个学期的各课成绩-->
+                                <tr height="10px">
+                                    <td class="semester_title" >2021-2022学年秋期</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="collage_grades_1"><!--第一学期的课程成绩表-->
+                                            <tr>
+                                                <th>课程名称</th>
+                                                <th>性质</th>
+                                                <th>学分</th>
+                                                <th>成绩</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">中国近代史纲要</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">2.5</td>
+                                                <td class="center">89</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">信息科学概论</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">2.0</td>
+                                                <td class="center">95</td>
+                                          
+                                            </tr>
+                                            <tr>
+                                                <td class="center">公共体育(1)</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">1.0</td>
+                                                <td class="center">83</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">大学英语（1）</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">3.0</td>
+                                                <td class="center">86</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">程序设计</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">4.0</td>
+                                                <td class="center">99</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">高等数学（上）</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">5.0</td>
+                                                <td class="center">89</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">形势与政策（1）</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">0.25</td>
+                                                <td class="center">95</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">思想道德与法治</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">2.5</td>
+                                                <td class="center">91</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                             
+                                <tr height="10px">
+                                    <td class="semester_title" >2021-2022学年春期</td>
+                                </tr>
+                                <tr>
+                                    <td >
+                                        <table class="collage_grades_2"> <!--第二学期的课程成绩表-->
+                                            <tr>
+                                                <th>课程名称</th>
+                                                <th>性质</th>
+                                                <th>学分</th>
+                                                <th>成绩</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">中国古典名家散文鉴赏</td>
+                                                <td class="center">通选</td>
+                                                <td class="center">2.0</td>
+                                                <td class="center">96</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">大学英语（2）</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">4.0</td>
+                                                <td class="center">88</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">形势与政策（2）</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">0.3</td>
+                                                <td class="center">91</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">数据结构</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">4.0</td>
+                                                <td class="center">93</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">毛泽东思想和中国特色社会主义理论体系概论（上）</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">2.5</td>
+                                                <td class="center">91</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">离散数学</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">3.0</td>
+                                                <td class="center">91</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">美育课程（1）——艺术与审美</td>
+                                                <td class="center">通选</td>
+                                                <td class="center">2.0</td>
+                                                <td class="center">97</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">马克思主义基本原理概论</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">2.5</td>
+                                                <td class="center">93</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">高等数学（2）</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">5.0</td>
+                                                <td class="center">87</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">公共体育（2）</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">1.0</td>
+                                                <td class="center">78</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">军事理论</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">2.0</td>
+                                                <td class="center">86</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">大学生心理健康</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">2.0</td>
+                                                <td class="center">86</td>
+                                            </tr>
+                                        </table>
+                                    </td>   
+                                </tr>
+                                <tr height="10px">
+                                    <td class="semester_title" >2022-2023学年秋期</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="collage_grades_2"> <!--第三学期的课程成绩表-->
+                                            <tr> <!--表头-->
+                                                <th>课程名称</th>
+                                                <th>性质</th>
+                                                <th>学分</th>
+                                                <th>成绩</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">Java程序设计</td>
+                                                <td class="center">选修</td>
+                                                <td class="center">3.0</td>
+                                                <td class="center">95</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">毛泽东思想和中国特色社会主义理论体系概述（下）</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">2.0</td>
+                                                <td class="center">94</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">体育专项（1）</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">1.0</td>
+                                                <td class="center">86</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">写作与沟通</td>
+                                                <td class="center">通选</td>
+                                                <td class="center">2.0</td>
+                                                <td class="center">92</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">城市环境安全</td>
+                                                <td class="center">通选</td>
+                                                <td class="center">2.0</td>
+                                                <td class="center">93</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">形势与政策（3）</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">0.3</td>
+                                                <td class="center">98</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">操作系统</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">3.0</td>
+                                                <td class="center">91</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">数据库系统</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">3.0</td>
+                                                <td class="center">90</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">社会主义五百年发展史</td>
+                                                <td class="center">通选</td>
+                                                <td class="center">2.0</td>
+                                                <td class="center">93</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">算法分析与设计</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">2.0</td>
+                                                <td class="center">90</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">线性代数（工）</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">4.0</td>
+                                                <td class="center">75</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">职场高情商工作技巧</td>
+                                                <td class="center">通选</td>
+                                                <td class="center">1.0</td>
+                                                <td class="center">93</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">计算机网络</td>
+                                                <td class="center">必修</td>
+                                                <td class="center">3.0</td>
+                                                <td class="center">75</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>                        
+                            </table>
+                        </td>
+                    </tr>
+                    <tr height="20px">
+                        <td class="secondarytitle">学业证书</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="certificate">   <!--学业证书表-->
+                                <tr>
+                                    <th>所获奖项或证书</th>
+                                </tr>
+                                <tr>
+                                    <td>普通话水平测试证书</td>
+                                </tr>
+                                <tr>
+                                    <td>全国大学生英语四级考试证书</td>
+                                </tr>
+                                <tr>
+                                    <td>志愿者荣誉证书</td>
+                                </tr>
+                                <tr>
+                                    <td>院级奖学金</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table> 
+            </td>
+        </tr>
+        
+    </table>
+
+    <footer><!--页脚-->
+        2023.6
+        <br>
+        中南财经政法大学信息与安全工程学院
+        <br>
+        信管2101 梁双  
+    </footer>
+
+
+ 
+
+
+</body>
+</html>

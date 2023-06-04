@@ -1,0 +1,184 @@
+/******************************设置body内总体css***********************************/
+body {     
+    background-image: url(life-images/background.jpg);   /*背景图片*/
+    background-size: 100%;                               /*背景图片覆盖整个页面*/
+    opacity: 0.8;                                        /*设置不透明度*/
+    font-family:Tahoma, Geneva, Verdana, sans-serif;     /*字体相关设计*/
+    font-size:small;
+    margin:0px;                                          /*外边框为0*/
+  }
+
+
+
+  /***********************************header页眉区布局***************************/
+  header {
+    margin:           10px;
+    height:           90px;
+  }
+
+
+  header h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:40px;
+    color: #e6f3ba;
+  }
+
+  header img{
+    width: 90px;
+    height: 90px;
+    position:absolute;
+    top:0;
+    right:0;
+  }
+  
+  /**********************************主内容区相关布局main******************************/
+  div#main {
+    background:       #b0c7e6;
+    font-size:        105%;
+    padding:          15px;
+    margin:           10px 310px 10px 310px;
+  }
+
+  div#main h2{
+    background-color: #4190f8;
+    text-align: center;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    color:red
+  }
+
+  div#main h3{
+    text-align: center;
+    font-family:Verdana, Helvetica, Arial, sans-serif ;
+    font-weight: bold;
+    font-size:120%;
+    font-style: oblique;
+  }
+
+  div#main .sub_content{
+    text-align: center;
+    color:blueviolet;
+  }
+
+/*将campus_life和entertainment_time两个区域内容利用表格布局设置为左右两列的布局格式*/
+
+/*主内容区main下的左右两列表格布局*/
+  div#main #campus_life{
+    padding:          5px;
+    width:50%;                /*宽度占50%*/
+    display: table-cell;      /*表格单元格*/
+    vertical-align: top;      /* 表格单元格元素的垂直对齐方，表示垂直对齐表格单元格的顶部*/
+  }
+
+  div#main #entertainment_time{
+    padding:          5px;
+    width: 50%;               /*宽度占50%*/
+    display: table-cell;      /*表格单元格*/
+    vertical-align: top;       /*表格单元格元素的垂直对齐方，表示垂直对齐表格单元格的顶部*/
+  }
+
+  div#main #tableContainer{
+    display: table;   
+    /*布局为table*/
+    border-spacing:30px;  
+    /*边框间距，单元格之间的距离*/
+    margin:auto;/*边框可变*/
+    border:5px solid rgb(136, 96, 238);
+   
+  }
+  div#main #tableRow{
+    display:table-row; 
+     /*表格行*/
+  } 
+
+
+  div#main blockquote p img{
+    width:280px;         /*设置主内容区的图片宽度为280px*/
+    height:200px;        /*设置主内容区的图片高度为200px*/
+
+  }
+
+  div#main ul{
+    border:4px solid rgb(189, 120, 239);
+    text-align: center;
+  }
+
+  div#main ul li{
+    margin-bottom: 10px;
+    color:blueviolet;
+  }
+
+  /*******************************左侧内容区leftaside布局*******************************/
+  /*采用绝对定位方式布局 left：0*/
+  div#leftaside{
+    background:       #b0c7e6 ;
+    padding:          15px;
+    margin:           0px 10px 10px 10px;
+    position:absolute;     /*采用绝对定位布局*/
+    top:128px;             /*距离网页顶部128px*/
+    left:0;                /*与网页左侧间距为0*/
+    width: 260px;           /*设置宽度为260px*/ 
+    height: auto;           /*高度设置为可变动的*/
+    display:table-cell;     /*元素作为表格单元格形式展现*/
+    vertical-align: middle; /*垂直居中*/
+    text-align: center;     /*水平居中*/
+  }
+
+  /*左侧图片img设置*/
+  div#leftaside img{
+    width: 230px;       /*设置左侧图片的宽度为230px*/
+    height: 150px;      /*设置左侧图片的高度为150px*/
+
+  }
+
+  /*内容类的border、margin、padding设置*/
+  .content{
+    border:3px solid rgb(87, 161, 246);
+    margin:3px;
+    padding:3px;
+  }
+
+  /*h3标签内容字体设置*/
+  div#leftaside h3{
+    color:chocolate;
+    font-style: italic;
+  }
+
+
+  /*******************************右侧内容区rightaside相关布局****************************/
+  /*采用绝对定位布局 right：0*/
+  div#rightaside{
+    background:       #b0c7e6 ;
+    padding:          15px;
+    margin:           0px 10px 10px 10px;
+    position:absolute;  /*采用绝对定位布局*/
+    top:128px;          /*距离网页顶部128px*/
+    right:0;            /*与网页右侧间距为0*/
+    width: 260px;
+    height: auto;
+    display:table-cell;  /*元素作为单元格形式展现*/
+    vertical-align: middle; /*垂直居中*/
+    text-align: center;     /*水平居中*/
+  }
+
+  /*右侧图片img设置*/
+  div#rightaside img{
+    width:220px;       /*设置左侧图片的宽度为230px*/
+    height: 150px;     /*设置左侧图片的高度为150px*/
+  }
+
+  /*右侧内容区h3标签内容css设计*/
+  div#rightaside h3{
+    color:chocolate;
+    font-style: italic;
+  }
+
+  /**************************************页脚foote区内容布局r***********************/
+  footer {
+    background-color:#b0c7e6;
+    color: black;
+    text-align:center;
+    padding:15px;
+    margin:0px;
+    font-size:14px;
+  }

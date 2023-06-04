@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人爱好</title>
+    <link rel="stylesheet" type="text/css" href="hobby.css">
+</head>
+<body>
+    <!--使用HTML5中的header标签，填充页面顶部内容-->
+    <header>
+        <h1>我的兴趣爱好</h1>   <!--大标题-->
+        <h2>
+            <p>歌曲</p>         <!--四个小标题-->
+            <p>影视</p>
+            <p>明星</p>
+            <p>食物</p>
+        </h2>
+    </header>
+
+    <!--主内容区分为contain_1和contain_2两块，分别上下显示-->
+    <div class="contain_1">
+        <!--congtain_1区域内再次划分两块区域，通过使用表格布局将歌曲和电视剧两块分开-->
+        <div class="tableContainer">  
+            <div class="tableRow">
+                <!--表格布局左侧区域内容——songs-->
+                <div id="songs">
+                    <table>
+                        <!--建立表格显示内容-->
+                        <tr class="top">
+                            <!--主标题-->
+                            <td colspan="4">我喜欢的歌曲</td>
+                        </tr>
+                        <tr class="title">
+                            <!--每首歌从这四个方面描述-->
+                            <th>歌曲名称</th>
+                            <th>概念图片</th>
+                            <th>歌曲简介</th>
+                            <th>高潮歌词</th>
+                        </tr>
+                        <!--表格中的主内容区-->
+                        <!--第一首歌——Darl+ing-->
+                        <tr class="content">
+                            <td class="name">Darl+ing</td>
+                            <td>
+                                <img src="hobby_images/1.1.jpg" alt="Darl+ing">
+                            </td>
+                            <td class="introduce">
+                                《Darl+ing》是SEVENTEEN演唱的歌曲，
+                                由BUMZU、WOOZI、Shannon作词，
+                                BUMZU、Hyun Hwang(MonoTree)、WOOZI作曲，
+                                收录在2022年4月15日发行的专辑《Darl+ing》中。
+                            </td>
+                            <td class="lyrics">
+                                <em>
+                                    <!--使用em表示强调，在浏览器上显示为斜体-->
+                                    ‘Cause I know that our love was hotter than the sun
+                                    Yeah the taste of this tequila I’m drinking now
+                                    Isn’t bitter than my heart
+                                </em>
+                            </td>
+                        </tr>
+                        <!--第二首歌——Honest-->
+                        <tr class="content">
+                            <td class="name">Honest</td>
+                            <td>
+                                <img src="hobby_images/1.2.jpg" alt="Honest">
+                            </td>
+                            <td class="introduce">
+                                《Honest》是rei brown演唱的歌曲，于2020年9月18日发行。
+                                讲述的是一个关于背叛的故事，标准的关系中是随着一个转折而破裂 — 主人公不愿意成为受害者。
+                                 抓耳以及热情的节奏配上放肆的吉他旋律和持续的鼓点，为整首歌曲奠定了基调，反倒更适合暖和之地。
+                            </td>
+                            <td class="lyrics">
+                                <em>
+                                    <!--使用em表示强调，在浏览器上显示为斜体-->
+                                    I never loved you if we're honest honest
+                                    I know this isn't what we promised promised
+                                    Thought you could be the one I wanted
+                                    But you're so far far
+                                </em>
+                                
+                            </td>
+                        </tr>
+                        <!--第三首歌——你的降临-->
+                        <tr class="content">
+                            <td class="name">你的降临</td>
+                            <td>
+                                <img src="hobby_images/1.3.jpg" alt="你的降临">
+                            </td>
+                            <td class="introduce">
+                                《你的降临》是由尹游观作词，唯今作曲，茶茶演唱的歌曲，发行于2021年6月22日。
+                                 [1] 收录于同名专辑《你的降临》中。
+                            </td>
+                            <td class="lyrics">
+                                <em>
+                                    <!--使用em表示强调，在浏览器上显示为斜体-->
+                                    像季风一样迅疾你突然降临
+                                    漂洋过海的雨滴给我所有勇气
+                                    亲吻你眼睛以肩背相抵
+                                    在你的星空有我烟火的痕迹
+                                </em>
+                                
+                            </td>
+                        </tr>
+                        <!--第四首歌——水星记-->
+                        <tr>
+                            <td class="name">水星记</td>
+                            <td>
+                                <img src="hobby_images/1.4.jpg" alt="水星记">
+                            </td>
+                            <td class="introduce">
+                                《水星记》(Mercury Records)是由郭顶作词、作曲并演唱的歌曲，
+                                作为第二波抒情主打曲收录于郭顶2016年11月25日发行的专辑《飞行器的执行周期》。
+                            </td>
+                            <td class="lyrics">
+                                <!--使用em表示强调，在浏览器上显示为斜体-->
+                                <em>
+                                    还要多远才能进入你的心
+                                    还要多久才能和你接近
+                                    咫尺远近却无法靠近的那个人
+                                    也等着和你相遇
+                                    环游的行星怎么可以拥有你
+                                </em>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="television">
+                    <!--表格布局右侧区域内容——television-->
+                    <table>
+                        <!--建立表格显示内容-->
+                        <tr class="top">
+                            <!--表格中的主标题，注意要将列单元格合并使用colspan="4"来实现-->
+                            <td colspan="4">我喜欢的电视剧</td>
+                        </tr>
+                        <tr class="title">
+                            <!--每个电视剧从这四个方面介绍-->
+                            <th>电视剧名称</th>
+                            <th>概念图片</th>
+                            <th>电视剧简介</th>
+                            <th>主要参演人员</th>
+                        </tr>
+                        <!--表格中的主内容区-->
+                        <!--第一个电视剧——民国奇探-->
+                        <tr class="content">
+                            <td class="name">民国奇探</td>
+                            <td>
+                                <img src="hobby_images/2.1.jpg" alt="民国奇探">
+                            </td>
+                            <td class="introduce">
+                                《民国奇探》讲述了在民国时期的上海滩，留英归来的高材生路垚、巡捕房探长乔楚生联手女记者白幼宁，
+                                侦破一个个离奇案件、伸张正义的故事。
+                            </td>
+                            <td class="lyrics">
+                                <ul><!--使用无序列表-->
+                                    <li><span class="actor">胡一天</span>饰演 <span class="Tname">路垚</span></li><!--使用span行内标签-->
+                                    <li><span class="actor">张云龙</span>饰演 <span class="Tname">乔楚生</span></li>
+                                    <li><span class="actor">肖燕</span>饰演 <span class="Tname">白幼宁</span></li>
+                                    <li><span class="actor">向云龙</span>饰演 <span class="Tname">卢阿斗</span></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <!--第二个电视剧——猎罪图鉴-->
+                        <tr class="content">
+                            <td class="name">猎罪图鉴</td>
+                            <td>
+                                <img src="hobby_images/2.2.jpg" alt="猎罪图鉴">
+                            </td>
+                            <td class="introduce">
+                                《猎罪图鉴》采取双男主设置，讲述了因一起尘封旧案而结怨的“模拟画像师”沈翊和刑警队长杜城，
+                                在机缘巧合下被迫搭档，联手侦破多起离奇疑案，共同追踪谜底真相的故事
+                            </td>
+                            <td class="lyrics">
+                                <ul><!--使用无序列表-->
+                                    <li><span class="actor">檀健次</span>饰演<span class="Tname">沈翊</span></li><!--使用span行内标签-->
+                                    <li><span class="actor">金世佳</span>饰演<span class="Tname">杜城</span></li>
+                                    <li><span class="actor">张柏嘉</span>饰演<span class="Tname">何溶月</span></li>
+                                    <li><span class="actor">朱嘉琦</span>饰演<span class="Tname">蒋峰</span></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <!--第三个电视剧——卿卿日常-->
+                        <tr class="content">
+                            <td class="name">卿卿日常</td>
+                            <td>
+                                <img src="hobby_images/2.3.jpg" alt="卿卿日常">
+                            </td>
+                            <td class="introduce">
+                                《卿卿日常》改编自多木木多的小说《清穿日常》，讲述了新川六少主尹峥与霁川少女李薇因意外结缘，
+                                共同开启了一段状况百出却又相映成趣的生活故事。
+                            </td>
+                            <td class="lyrics">
+                                <ul><!--使用无序列表-->
+                                    <li><span class="actor">白敬亭</span>饰演<span class="Tname">尹峥</span></li><!--使用span行内标签-->
+                                    <li><span class="actor">田曦薇</span>饰演<span class="Tname">李薇</span></li>
+                                    <li><span class="actor">陈小纭</span>饰演<span class="Tname">郝佳</span></li>
+                                    <li><span class="actor">刘冠麟</span>饰演<span class="Tname">尹岸</span></li>
+                                </ul>   
+                            </td>
+                        </tr>
+                        <!--第四个电视剧——云襄传-->
+                        <tr class="content">
+                            <td class="name">云襄传</td>
+                            <td>
+                                <img src="hobby_images/2.4.jpg" alt="云襄传">
+                            </td>
+                            <td class="introduce">
+                                《云襄传》改编自方白羽创作的小说《千门》，讲述了翩翩公子云襄背负门中使命步入江湖
+                                ，结识了几位好友，众人在波诡云谲的江湖纷争中捍卫仁德与心中正义的故事
+                            </td>
+                            <td class="lyrics">
+                                <ul><!--使用无序列表-->
+                                    <li><span class="actor">陈晓</span>饰演<span class="Tname">云襄/骆文佳</span></li><!--使用span行内标签-->
+                                    <li><span class="actor">毛晓彤</span>饰演<span class="Tname">舒亚男</span></li>
+                                    <li><span class="actor">唐晓天</span>饰演<span class="Tname">唐晓天</span></li>
+                                    <li><span class="actor">许龄月</span>饰演<span class="Tname">柯梦兰</span></li>
+                                </ul>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--第二个主内容区，同样将这一部分通过进一步表格布局分为明星和美食两个部分-->
+    <div class="contain_2">
+        <div class="tableContainer">
+            <div class="tableRow">
+                <div id="star">
+                    <!--表格布局左侧内容区——star-->
+                    <h2>我喜欢的明星：</h2>
+                    <h3>LEE KNOW and Han——旻城</h3>
+                    <P>
+                        <span class="star_name">LEE KNOW</span><br>
+                        <span class="star_intr">中文名李旻浩，南韩男团Starykids内成员之一，队内定位为主舞</span>
+                    </P>
+                    <p>
+                        <span class="star_name">Han</span><br>
+                        <span class="star_intr">中文名韩知城，南韩男团Starykids内成员之一，队内定位为ACE</span>
+                    </p>
+                    <!--通过使用marquee标签实现图片滚动效果-->
+                    <marquee scrollamount = "5" scrolldelay = "100" onmouseover = "stop()" onmouseout = "start() ">
+                        <img src="hobby_images/3.1.jpg" height="200px">
+                        <img src="hobby_images/3.2.jpg" height="200px">
+                        <img src="hobby_images/3.3.jpg" height="200px">
+                        <img src="hobby_images/3.4.jpg" height="200px">
+                        <img src="hobby_images/3.5.jpg" height="200px">
+                        <img src="hobby_images/3.6.jpg" height="200px">
+                        <img src="hobby_images/3.7.jpg" height="200px">
+                        <img src="hobby_images/3.8.jpg" height="200px">
+                    </marquee>
+                    <p>
+                        李旻浩&韩知城——<span class="cp">旻城</span>，全球美帝cp
+                        <blockquote >
+                            <!--使用blockquote块元素-->
+                            "我们是彼此的soulmate" <br>
+                            "你喜欢我，但你对我的喜欢是那种喜欢吗？"  ——“我对哥的喜欢应该是那种喜欢？”<br>
+                            “我很普通吧，跟哥相比的话”    ——“我喜欢普通” <br>
+                            “我不虚情假意，我爱你！”
+                        </blockquote>
+                    </p>
+                    <div class="vedio">
+                        <!--使用HTML5新元素video插入一段视频-->
+                        <video width="400px" height="240px" controls="controls" margin="0" >
+                            <source src="video/‌旻城.mp4" type="video/mp4">
+                        </video>
+                    </div>         
+                </div>
+
+                <div id="delicacy">
+                    <!--表格布局右侧内容区——delicacy-->
+                    <h2>我喜欢的美食</h2><!--大标题-->
+                    <h3>韩料</h3><!--4个小标题-->
+                    <p><!--p标签内插入对应美食图片-->
+                        <img src="hobby_images/4.1.jpg" alt="韩料">
+                        <img src="hobby_images/4.2.jpg" alt="韩料">
+                    </p>
+                    <h3>日料</h3>
+                    <p>
+                        <img src="hobby_images/4.3.jpg" alt="日料">
+                        <img src="hobby_images/4.4.jpg" alt="日料">
+                    </p>
+                    <h3>烧烤</h3>
+                    <p>
+                        <img src="hobby_images/4.5.jpg" alt="烧烤">
+                        <img src="hobby_images/4.6.jpg" alt="烧烤">
+                    </p>
+                    <h3>火锅</h3>
+                    <p>
+                        <img src="hobby_images/4.7.jpg" alt="火锅">
+                        <img src="hobby_images/4.8.jpg" alt="火锅">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <!--页脚部分-->
+        2023.6
+        <br>
+        中南财经政法大学信息与安全工程学院
+        <br>
+        信管2101 梁双 
+    </footer>
+
+
+</body>
+</html>

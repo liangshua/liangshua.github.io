@@ -1,0 +1,246 @@
+/************************************总体body布局****************************/
+body {     
+    background-image: url(hobby_images/background.jpg);  /*设置背景图片*/
+    background-size: 100%;                               /*背景图片覆盖整个网页页面*/
+    opacity: 0.8;                                        /*不透明度为0.8*/
+    font-family:Tahoma, Geneva, Verdana, sans-serif;     /*设置字体*/
+    font-size:small;                                     /*字体大小为small*/
+    margin:0px;
+  }
+
+/***********************************header布局*******************************/
+  header{
+    position: relative;                                /*采用相对定位*/
+    top:0;                                             /*距离顶部距离为0*/
+    width:auto;                                        /*宽度依照网页页面变换可变*/
+    height:100px;                                      /*header高度为100px*/
+    background-color: rgb(187, 182, 249);            /*设置背景颜色*/
+    opacity: 80%;                                      /*不透明度为80%*/
+  }
+  /*header中的h1标签配置*/
+  header h1{
+    text-align: center;                                /*内容居中*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:35px;                                    /*字体大小*/
+    border: 3px dotted antiquewhite;                 /*设置border边框*/
+    margin:0;                                          /*设置外边距为0*/
+    color:antiquewhite;                              /*设置背景颜色*/
+    letter-spacing: 1em;                               /*每个字之间的间距为1em*/
+  }
+  /*header中的h2标签配置*/
+  header h2 {
+    width:auto;                                        /*宽度可变*/
+    height:50px;                                       /*高度为50px*/
+    color:#504009;
+    font-style: italic;                                /*斜体*/
+    background-color: antiquewhite;
+    margin:0;
+  }
+  /*header中的h2标签下的p标签配置*/
+  header h2 p{
+    float:left;
+    margin-left: 300px;
+    letter-spacing: 0.3em;
+  }
+
+  /*******************************个人课表*********************************************/
+  div#i_c_schedules{
+    text-align: center;                                    /*居中*/
+  }
+
+  div#i_c_schedules h2{
+    color: #5c0722;                                      /*h2字体颜色*/
+  }
+  /*整体表格布局*/
+  div#i_c_schedules table{                                 
+    width: 1000px;                                         /*宽度*/
+    background-color: white;                             /*背景颜色*/
+    opacity: 0.8;                                          /*不透明度*/
+    margin:auto;                                           /*外边距设为可变*/
+    border-bottom:2px solid black;                       /*边框设置*/
+    border-right:2px solid black ;
+  }
+  /*表头布局*/
+  div#i_c_schedules table th {
+    border-left:2px solid black;                         /*边框设置*/
+    border-top:2px solid black;
+    padding:7px;                                           /*内边距*/
+    background-color: #f3e2a9;                           /*背景颜色*/
+  }
+
+  /*表格内容行设置*/
+  div#i_c_schedules table td {
+    border-left:2px solid black;                         /*边框设置*/
+    border-top:2px solid black;
+    padding:7px;                                           /*内边距*/
+    background-color: antiquewhite;                       /*背景颜色*/
+  }
+
+  /******************************************近期任务**************************************/
+  /*近期任务大框架布局*/
+  div#recent_task{
+    margin-top:10px;
+    margin-bottom: 10px;
+    width:1000px;
+    height:620px;
+    background-color: antiquewhite;
+    margin-left:auto;
+    margin-right: auto;
+    opacity: 0.8;
+  }
+
+  /*h2标签设置*/
+  div#recent_task h2{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    color:#5c0722;
+    padding: 20px 10px 10px 0px;
+  }
+
+  /**********划分三个区块，采用浮动流体布局**************/
+
+  /*区块一布局*/
+  div.block_1{
+    width:300px;
+    height:530px;
+    float:left;/*利用float将内容区向左浮动*/
+    margin:5px 10px 10px 30px;
+    background-color: #e8debf;
+    border-radius: 8%;
+  }
+
+  /*区块二布局*/
+  div.block_2{
+    width:300px;
+    height: 530px;
+    float: left;/*利用float将内容区向左浮动*/
+    margin:5px 10px 10px 10px;
+    background-color: #e8debf;
+    border-radius: 8%;
+  }
+  /*区块三布局*/
+  div.block_3{
+    width:300px;
+    height: 530px;
+    float:left;/*利用float将内容区向左浮动*/
+    margin:5px 10px 10px 10px;
+    background-color: #e8debf;
+    border-radius: 8%;
+  }
+
+  /*区块内article中的h1标签设计*/
+  article h1{
+    padding-left: 25px;
+    background-color: #eddeb0;
+    font-size: 20px;
+    padding:10px;
+    margin-top:0;
+    margin-bottom: 5px;
+    color:#504009
+  }
+
+  /*区块内article中的blockquote标签设计*/
+  article blockquote{
+    margin:auto;
+    width:280px;
+    height:520px;
+    text-align: center;
+  }
+
+  /*blockquote中的p标签下的span行内标签内容css设计*/
+  article .content{
+    color:#5c0722;
+    font-size:110%;
+  }
+  
+  /*blockquote中的p标签下的span行内标签内容css设计*/
+  article .date{
+    font-weight: bold;
+  }
+
+
+  /**********************************************留言板*******************************/
+  /*message_board中h2标签内容的css设计*/
+  div#message_board h2{
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    color:#5c0722;
+  }
+
+  /*form表单的css设计*/
+  /*表单内采用表格布局方式排版*/
+  form {
+    display: table;  /*作为块级表格来显示*/
+    margin:auto;
+    padding: 10px;
+    border-radius: 8%;
+    background-color: #fdd6c1;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  div.tableRow {
+    display: table-row;/*作为一个表格行显示*/
+  }
+  
+  /*p、label、input标签布局设计*/
+  div.tableRow p, div.tableRow label, div.tableRow input {
+    display: table-cell;/*表格单元格*/
+    vertical-align: top;
+    padding:3px;
+  }
+
+  /*label标签内容css*/
+  div.tableRow label{
+    padding-left:50px;
+    color:#5c0722;
+  }
+
+  /*label标签靠右排列*/
+  div.tableRow label:first-child {
+    text-align: right;
+  }
+
+  legend {
+    font-weight: bold;
+    color:#504009;
+    font-size: 110%;
+  }
+
+  /*文本区大小*/
+  form textarea {
+    display: table-cell;
+    width: 725px;
+    height: 200px;
+    border-radius: 10%;
+  }
+
+  /*提交键css设计*/
+  input#submit{
+    width:50px;
+    height:30px;
+    background-color: #f0cdcd;
+    border-radius: 10%;
+  }
+  
+
+
+  /**************************************footer页脚区布局*****************************/
+  footer {
+    background-color:#f5bfc0;
+    opacity: 80%;
+    color: rgb(29, 29, 29);
+    text-align:center;
+    padding:15px;
+    margin:0px;
+    font-size:12px;
+  }
+  
+
+  
+
+
+
+
+ 
